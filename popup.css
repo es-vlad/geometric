@@ -1,0 +1,94 @@
+.popup_shadow {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.popup {
+    width: 100%;
+    height: 376px;
+    position: fixed;
+    left: 0;
+    top: 20%;
+    display: block;
+    background: #D4D4D4 url('/images/landscape-615429_1280.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.popup_wrapper {
+    width: 775px;
+    margin: 0 auto;
+    margin-top: 32px;
+    height: 305px;
+    /* border: 2px solid white; */
+    
+    border-radius: 10px;
+    /* background: #908E8E; */
+}
+
+.popup_h1 {
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 8px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #007ea8;
+    line-height: 39px;
+}
+
+.popup_h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    text-shadow: 0 1px 1px #007ea8;
+}
+
+.popup_form {
+    margin: 30px 0px 0px 130px;
+}
+
+.popup_wrapp label {
+    display: inline-block;
+}
+
+.popup_wrapp .line_block {
+    display: inline-block;
+}
+
+.popup_wrapp input[type='text'] {
+    display: inline-block;
+    border: 1px solid rgb( 0, 135, 179);
+    border-radius: 5px;
+    background-color: rgb( 245, 245, 245);
+    outline: none;
+    height: 35px;
+    padding-left: 19px;
+    margin-bottom: 10px;
+    width: 240px;
+    color: #696969;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.popup_wrapp input[type="button"] {
+    width: 267px;
+    height: 54px;
+    font: 20px pf_din_text_cond_promedium;
+    line-height: 23px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 0 10px;
+    margin-top: 10px !important;
+    margin-left: 127px;
+    background: none;
+    border: 1px solid rgb(255, 195, 2);
+    color: white;
+}

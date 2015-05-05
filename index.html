@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>geometric</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="popup.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/nicescroll/jquery.nicescroll.min.js"></script>
+    <script type="text/livescript" src="bower_components/flip/dist/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="body_page">
+        <div class="wrapper">
+            <div class="header">
+                <div class="btn_menu" onclick="menuClick('work_page')">
+                    <span>Работы</span>
+                </div>
+                <div class="btn_menu" onclick="menuClick('team_page')">
+                    <span>Команда</span>
+                </div>
+                <div class="btn_menu" onclick="menuClick('services_page')">
+                    <span>Услуги</span>
+                </div>
+                <div class="btn_menu" style="width: auto;" onclick="menuClick('advantages_page')">
+                    <span>Преимущества</span>
+                </div>
+                <div class="btn_menu" onclick="popup_show()">
+                    <span>Оставить заявку</span>
+                </div>
+            </div>
+            <div class="content" id="main" style="display: block">
+                <div class="center_block">
+                    <div class="logo"></div>
+                    <h1 style="font-size: 105px;display: inline-block;position: absolute;color: darkcyan;top: 138px;left: 108px; margin: 0">Geometric</h1>
+                    <h1 style="color: white;background-color: rgba(131, 130, 130, 0.7);font-weight: 300;display: inline-block;margin-top: 10px;
+  margin-bottom: 0;margin-left: 65px;">Студия лендингов для бизнеса</h1>
+                    <h1 style="color: white;background-color: rgba(131, 130, 130, 0.7);font-weight: 300;display: inline-block;margin-top: 0;
+  float: right; margin-right: 0px;">и лидогенерация</h1>
+                </div>
+            </div>
+            <div class="content" id="work_page" style="display: none;padding-top: 40px;">
+                <h1 style="text-align: center;font-size: 49px;background: darkcyan;width: 340px;margin: 0 auto; margin-bottom: 20px;">Примеры</h1>
+                <div id="work_content" style="height: 460px;background: rgba(255, 255, 255, 0.168627);">
+                    <div style="float: left; width: 45%;height: 965px; background: url('images/portfolio/new/1.png') no-repeat;background-size: 100% 100%; margin-top: 30px;"></div>
+                    <div style="float: right; width: 45%;height: 775px; background: url('images/portfolio/new/2.png') no-repeat;background-size: 100% 100%;margin-top: 30px;"></div>
+                    <div style="float: right; width: 45%;height: 775px; background: url('images/portfolio/new/3.jpg') no-repeat;background-size: 100% 100%;margin-top: 30px;"></div>
+                    <div style="float: left; width: 45%;height: 775px; background: url('images/portfolio/new/4.jpg') no-repeat;background-size: 100% 100%;margin-top: 30px;"></div>
+                    <div style="float: right; width: 45%;height: 775px; background: url('images/portfolio/new/5.jpg') no-repeat;background-size: 100% 100%;margin-top: 30px;"></div>
+                </div>
+            </div>
+            <div class="content" id="team_page" style="display: none;padding-top: 40px;">
+                <h1 style="text-align: center;font-size: 49px;background: darkcyan;width: 240px;margin: 0 auto; margin-bottom: 20px;font-weight: 300">Команда</h1>
+                <div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (1).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (3).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (7).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (8).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (9).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                </div>
+                <div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (10).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (2).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (6).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (4).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                    <div style="width: 17%; height: 160px; background: url('images/team/128 (5).jpg') no-repeat;background-size: contain; margin: 10px; display: inline-block"></div>
+                </div>
+            </div>
+            <div class="content" id="services_page" style="display: none;padding-top: 40px;">
+                <h1 style="text-align: center;font-size: 49px;background: darkcyan;width: 380px;margin: 0 auto; margin-bottom: 20px;font-weight: 300">Выбрать услугу</h1>
+                <div style="display: inline-block;margin: 10px;width: 31%;height: 420px;background: url('images/landproto.png'); background-size: 100% 100%;background-repeat: no-repeat;" onclick="menuClick('landing_page')"></div>
+                <div style="display: inline-block;margin: 10px;width: 31%;height: 420px;background: url('images/voronka.png');
+  background-size: 100% 100%;background-repeat: no-repeat;background-position: center center;" onclick="menuClick('marketing_page')"></div>
+                <div style="display: inline-block;margin: 10px;width: 30%;height: 420px;background-color: #527498;background-image: url('images/vkservice.png'); background-size: contain; background-repeat: no-repeat; background-position: center center;"></div>
+            </div>
+            <div class="content" id="landing_page" style="display: none;">
+                <h1 style="text-align: center;font-size: 49px;background: darkcyan;width: 535px;margin: 0 auto; margin-bottom: 20px;font-weight: 300">Создание Лендингов</h1>
+                <div id="landing_content" class="" style="background: rgba(255, 255, 255, 0.17);height: 500px; overflow: auto">
+                    <h1 style="text-align: left;font-size: 45px;margin-bottom: 20px;margin-left: 20px;font-weight: 300;">Этапы работы</h1>
+                    <div style="" class="small_block">
+                        <h1 style="font-weight: 300;text-align: center;float: left;margin: 0;margin-top: 27px;">Анализ вашей ниши</h1>
+                    </div>
+                    <div style="" class="small_block">
+                        <h1 style="font-weight: 300;text-align: center;float: left;margin: 0;margin-top: 27px;">Рисуем прототип и пишем тексты</h1>
+                    </div>
+                    <div style="width: 30%" class="small_block">
+                        <h1 style="font-weight: 300;text-align: center;float: left;margin: 0;margin-top: 27px;">Делаем макет на базе прототипа</h1>
+                    </div>
+                    <div class="small_block" style="margin-left: 17%;">
+                        <h1 style="font-weight: 300;text-align: center;float: left;margin: 0;margin-top: 27px;">Передаем дизайн в верстку</h1>
+                    </div>
+                    <div class="small_block" style="margin-left: 2%;">
+                        <h1 style="font-weight: 300;text-align: center;float: left;margin: 0;margin-top: 27px;">Запускаем контекст и проводим тесты</h1>
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Анализ Вашей ниши</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28);">
+                        <div style="float: left; margin-left: 13px;font-size: 20px;font-weight: bold;">
+                            <p style="">Заполняем бриф из 150 вопросов и вникаем в Вашу нишу</p>
+                            <p>Формируем Ваше УТП</p>
+                            <p>Выделяем смыслы и сильные стороны Вашего продукта</p>
+                        </div>
+                        <img src="images/TargetImage.png" alt="" style="float: right;width: 200px;height: 200px;margin-right: 130px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Создание прототипа</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28);display: inline-block;">
+                        <div style="float: left; font-size: 20px;font-weight: bold;margin-left: 13px; width: 55%">
+                            <p>Детализация и проработка всех составных частей проекта.</p>
+                            <p>Мы разрабатываем детальный прототип для каждого проекта, это позволяет избежать ошибок и составить идеальную структуру страниц.
+                            </p>
+                        </div>
+                        <img src="images/landproto.png" alt="" style="float: right;width: 280px;height: 340px;margin-right: 90px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Создание дизайна</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28); display: inline-block">
+                        <div style="float: left; margin-left: 13px;font-size: 20px;font-weight: bold;width: 60%;">
+                            <p>Размещение элементов на сайте влияет на конверсию.</p>
+                            <p>Мы делаем дизайн с маркетинговым анализом.</p>
+                            <p>Наши дизайнеры прорабатывают прототип и превращают его в произвидение искуства.</p>
+                        </div>
+                        <img src="images/designImage.png" alt="" style="float: right;width: 370px;height: 360px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Копирайтинг</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28); display: inline-block">
+                        <div style="float: left; margin-left: 13px;font-size: 20px;font-weight: bold;width: 60%;padding-top: 100px;">
+                            <p>Копирайтеры состовляют продающие тексты для Вашего сайта.</p>
+                        </div>
+                        <img src="images/copyright.png" alt="" style="float: right;width: 370px;height: 360px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Верстка дизайна</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28); display: inline-block">
+                        <div style="float: left; margin-left: 13px;font-size: 20px;font-weight: bold;width: 60%;padding-top: 100px;">
+                            <p style="text-align: center">Наши веб программисты преврощают всю информацию в рабочую лошадку, которая будет генирировать Вам заказы.</p>
+                        </div>
+                        <img src="images/bracketsImage.png" alt="" style="float: right;width: 370px;height: 360px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Реклама</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28); display: inline-block">
+                        <div style="float: left; margin-left: 13px;font-size: 20px;font-weight: bold;width: 55%;padding-top: 100px;">
+                            <p>Наши специалисты не один десяток раз доказали свои навыки в аналитике и анализе данных.</p>
+                            <p>Найти целевых клиентов для Вашего бизнеса - это их задача и любимое дело.</p>
+                        </div>
+                        <img src="images/contextImage.png" alt="" style="float: right;width: 419px;height: 360px;">
+                    </div>
+                    <h1 style="background: darkcyan;font-size: 40px;font-weight: 300;">Технологии</h1>
+                    <div style="width: 100%; min-height: 200px;background: rgba(0, 0, 0, 0.28); display: inline-block;text-align: center;">
+                        <div style=" display: inline-block;font-size: 20px;font-weight: bold;width: 75%;padding-top: 25px;text-align: center;">
+                            Мы используем самы передовые технологии и идем в ногу со временем. Мы не используем готовые решиния, там где гибче если написать самим.
+                        </div>
+                        <div style="text-align: left;">
+                            <div style="background: url('images/htmlcssImage.png');background-repeat: no-repeat;width: 280px;height: 170px;background-size: cover; display: inline-block"></div>
+                            <div style="background: url('images/jsImage.png');background-repeat: no-repeat;width: 140px;height: 135px;background-size: contain; display: inline-block;"></div>
+                            <div style="background: url('images/jqueryImage.png');background-repeat: no-repeat;width: 270px;height: 155px;background-size: contain; display: inline-block;"></div>
+                            <div style="background: url('images/nodejs.png');background-repeat: no-repeat;width: 240px;height: 155px;background-size: contain; display: inline-block;"></div>
+                            <div style="background: url('images/bootstrapImage.png');background-repeat: no-repeat;width: 155px;height: 155px;background-size: contain; display: inline-block;margin-left: 300px;"></div>
+                            <div style="background: url('images/angularImage.png');background-repeat: no-repeat;width: 155px;height: 155px;background-size: contain; display: inline-block;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="marketing_page" style="display: none; background: ">
+                <h1 style="text-align: center;margin-bottom: 20px;/* background: darkcyan; */"><span style="background: darkcyan;">КАК МЫ УВЕЛИЧИМ КЛИЕНТОВ</span><br><span style="background: darkcyan;">В ВАШЕМ БИЗНЕСЕ </span><br><span style="font-weight: 300; font-size: 21px;background: darkcyan;">...мы настроим под ключ такие каналы продаж</span></h1>
+                <div class="section_block">
+                    <div class="line card-grid" id="">
+                        <div class="front" style="background: url('images/socialnetwork.png'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+                        <div class="back" style="margin-top: 50px;">
+                            <div class="small_block" style="border: 1px solid white;">
+                                <span>Социальные<br/>сети</span>
+                            </div>
+                            <div class="small_block" style="margin-left: 45px;">
+                                <h3 style="margin: 0;margin-top: 5px; font-size: 21px; font-weight: 400;">Гарантированный результат</h3>
+                                <h5 style="margin: 0;margin-top: 5px; font-size: 16px; font-weight: 400;">10 000 потенциальных клиентов</h5>
+                            </div>
+                            <div class="small_block" style="float: right">
+                                <p style="text-align: left;font-size: 15px; margin: 0;">Мы без накруток и спама привлекаем целевых клиентов. Настраиваем таргетинг (бюджет до 500 долларов). Делаем страницы во всех соц сетях. Конкурсы и полезный контент от профессионалов SMM.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line card-grid">
+                        <div class="front" style="background: url('images/vkfc.png'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+                        <div class="back" style="margin-top: 50px;">
+                            <div class="small_block" style="border: 1px solid white;">
+                                <span>Контекстная<br/>реклама</span>
+                            </div>
+                            <div class="small_block" style="margin-left: 45px;">
+                                <h3 style="margin: 0;font-size: 21px; font-weight: 400;">Гарантированный результат</h3>
+                                <h5 style="margin: 0;margin-top: 5px; font-size: 16px; font-weight: 400;">Профессиональная настройка и постоянный поток клиентов</h5>
+                            </div>
+                            <div class="small_block" style="float: right">
+                                <p style="text-align: left;font-size: 15px; margin: 0;">Профессионалы нашей команды, настроят раз и навсегда рекламные компании в Yandex.Direct, Google.Adword, Бегун с максимальной эффективностью и экономией бюджета. Ваш сайт будет в топе поиска.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line card-grid" style="">
+                        <div class="front" style="background: url('images/salescript.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+                        <div class="back" style="margin-top: 50px;">
+                            <div class="small_block" style="border: 1px solid white;">
+                                <span>Скрипты<br/>продаж</span>
+                            </div>
+                            <div class="small_block" style="margin-left: 45px;">
+                                <h3 style="margin: 0;margin-top: -10px; font-size: 21px; font-weight: 400;">Гарантированный результат</h3>
+                                <h5 style="margin: 0;margin-top: 5px; font-size: 16px; font-weight: 400;">Индвидуальные скрипты для менежеров
+под все виды звонков и переписки</h5>
+                            </div>
+                            <div class="small_block" style="float: right">
+                                <p style="text-align: left;font-size: 15px; margin: 0;">Разрабатываем под Ваш бизнес скрипты продаж для менеджеров. Под Ваши каналы продаж. Делаем только то, что нужно Вам... </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line card-grid" style="">
+                        <div class="front" style="background: url('images/marketingKit.png'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+                        <div class="back" style="margin-top: 50px;">
+                            <div class="small_block" style="border: 1px solid white;">
+                                <span>Маркетинг<br/>КИТ</span>
+                            </div>
+                            <div class="small_block" style="margin-left: 45px;">
+                                <h3 style="margin: 0;font-size: 21px; font-weight: 400;">Гарантированный результат</h3>
+                                <h5 style="margin: 0;margin-top: 5px; font-size: 16px; font-weight: 400;">Качественные, продающие презентации для Вашей компании</h5>
+                            </div>
+                            <div class="small_block" style="float: right">
+                                <p style="text-align: left;font-size: 15px; margin: 0;">Мы сделаем для Вас, то, что нужно конкретно Вам. Презентации, упаковки, продающие комплексы. На любой формат встреч или семинаров. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line card-grid" style="">
+                        <div class="front" style="background: url('images/brand.png'); background-size: contain; background-repeat: no-repeat; background-position: center"></div>
+                        <div class="back" style="margin-top: 50px;">
+                            <div class="small_block" style="border: 1px solid white;">
+                                <span>Брендинг<br/>Naming</span>
+                            </div>
+                            <div class="small_block" style="margin-left: 45px;">
+                                <h3 style="margin: 0;font-size: 21px; font-weight: 400;">Гарантированный результат</h3>
+                                <h5 style="margin: 0;margin-top: 5px; font-size: 16px; font-weight: 400;">Уникальный дизайн логотипов Подбор бренда для Вас</h5>
+                            </div>
+                            <div class="small_block" style="float: right">
+                                <p style="text-align: left;font-size: 15px; margin: 0;">У нас есть отдельная команда людей, которые сделают Ваш бренд запоминающимся и уникальным.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="advantages_page" style="display: none; background: ">
+                <h1 style="text-align: center;font-size: 49px;background: darkcyan;margin: 0 auto; margin-bottom: 70px;font-weight: 300">Наши преимущества</h1>
+                <div style="font-size: 23px;text-align: left; margin-left: 50px;display: inline-block;width: 100%;">
+                    1. Мы максимально погружаемся в Ваш бизнес.
+                    <br>Нам важно качество а не скорость
+                    <div style="float: right;background: url('images/targetImage.png');width: 130px;height: 135px;background-size: cover;margin-top: -60px;margin-right: 160px;"></div>
+                </div>
+                <div style="font-size: 23px;text-align: left; margin-left: 50px;display: inline-block;width: 100%;margin-top: 70px;">
+                    2. Комплексное продвижение бизнеса.
+                    <div style="float: right;background: url('images/analytics.png');width: 240px;height: 160px;background-size: cover;margin-top: -60px;margin-right: 110px;"></div>
+                </div>
+                <div style="font-size: 23px;text-align: left; margin-left: 50px;display: inline-block;width: 100%;margin-top: 70px;">
+                    3. Возможность подключить систему мониторинга.
+                    <div style="float: right;background: url('images/superImage.png');width: 195px;height: 145px;background-size: cover;margin-top: -60px;margin-right: 120px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_shadow" onclick="popup_out();" style="display: none;"></div>
+        <div class="popup activePopup" id="popup" style="display: none;">
+            <div style="position: absolute;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.46);z-index: 1"></div>
+            <div class="popup_wrapper" style="position: relative;z-index: 9;">
+                <div class="popup_wrapp">
+                    <div class="popup_h1">ОСТАВЬТЕ ЗАЯВКУ</div>
+                    <div class="popup_h2">Заполните форму и мы обязательно напишем Вам</div>
+                    <form action="javascript:void(0)" class="popup_form" method="post" name="question_form" onsubmit="loadFacetzCollector('mokselle','', {type:'conv'});">
+                        <div style="margin: 0 auto;height: 70px; display: inline;">
+                            <input type="text" name="name" class="input_name" placeholder="ВАША ПОЧТА">
+                            <input type="text" name="phone" class="input_phone" placeholder="ССЫЛКА В СОЦ. СЕТЯХ">
+                        </div>
+                        <!--<input name="callback" type="button" class="button btn left-request" value="НАПИШИТЕ МНЕ" style="">-->
+                        <div style="text-align: center;">
+                            <a href="#" class="button_hover cta_btn-radial-out" style="margin-left: -120px;margin-top: 15px;">ОБРАТНЫЙ ЗВОНОК</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
